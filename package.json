@@ -2,16 +2,19 @@
   "name": "battle-calculator",
   "version": "0.0.0",
   "description": "battle calculator",
-  "main": "index.js",
   "repository": "https://cemderin@github.com/cemderin/battle-calculator.git",
   "author": "cemyderin@gmail.com",
   "license": "MIT",
   "scripts": {
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "start": "npx ts-node index.ts",
+    "build": "npx tsc"
   },
   "dependencies": {
     "commitizen": "^4.0.3",
-    "standard-version": "^7.1.0"
+    "standard-version": "^7.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.0.2"
