@@ -1,0 +1,30 @@
+import Throw from "../Throw";
+
+class ThrowWound extends Throw {
+    roll(dice: number): number {
+        if(!this.attacker) throw new Error('No attacking model');
+        if(!this.defender) throw new Error('No defending model');
+
+        let minFace = 0;
+
+        if(this.attacker.strength >= this.defender.toughness*2) {
+            minFace = 2;
+        } else if(this.attacker.strength > this.defender.toughness) {
+            minFace = 3;
+        } else if(this.attacker.strength == this.defender.toughness) {
+            minFace = 4;
+        }  else if(this.attacker.strength < this.defender.toughness) {
+            minFace = 5;
+        } 
+
+        return  dice    // input, amount of dice
+                *       // multiply by
+                (
+                    (1/6)   // total faces
+                    *       // multiply by
+                    (7 - minFace) // valid faces
+                );
+    }    
+}
+
+export default ThrowWound;
