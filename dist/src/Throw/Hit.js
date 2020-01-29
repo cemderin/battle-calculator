@@ -17,12 +17,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var Throw_1 = __importDefault(require("../Throw"));
+var Logger_1 = __importDefault(require("../Logger"));
 var ThrowHit = /** @class */ (function (_super) {
     __extends(ThrowHit, _super);
     function ThrowHit() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ThrowHit.prototype.roll = function (dice) {
+        Logger_1["default"].log("Throw hit with " + dice);
         // check for attacker
         if (!this.attacker)
             throw new Error('No attacking model');

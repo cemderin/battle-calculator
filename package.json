@@ -5,6 +5,8 @@
   "repository": "https://cemderin@github.com/cemderin/battle-calculator.git",
   "author": "cemyderin@gmail.com",
   "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.dt.ts",
   "scripts": {
     "commit": "npx git-cz",
     "start": "npx ts-node index.ts",

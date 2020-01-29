@@ -7,6 +7,8 @@ class Throw {
     roll(dice: number): number {
         return dice;
     }    
-} 
+}
 
-export default Throw;
+export {
+    Throw as default
+};

@@ -24,7 +24,6 @@ var Phase = /** @class */ (function () {
     }
     Phase.prototype.handle = function (dice) {
         if (dice === void 0) { dice = 1; }
-        console.log("Start Phase " + this.name);
         Logger_1["default"].log("Start Phase " + this.name);
         var currentDice = dice;
         for (var i = 0; i < this.throws.length; i++) {
@@ -32,6 +31,7 @@ var Phase = /** @class */ (function () {
             this.throws[i].defender = this.defender;
             currentDice = this.throws[i].roll(currentDice);
         }
+        Logger_1["default"].log("Result " + currentDice);
         return currentDice;
     };
     return Phase;
