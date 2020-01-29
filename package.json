@@ -21,7 +21,8 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.0.2"
+    "cz-conventional-changelog": "3.0.2",
+    "jest": "^25.1.0"
   },
   "config": {
     "commitizen": {
