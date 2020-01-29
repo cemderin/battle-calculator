@@ -1,7 +1,9 @@
 import Throw from "../Throw";
+import Logger from "../Logger";
 
 class ThrowWound extends Throw {
     roll(dice: number): number {
+        Logger.log(`Throw wound with ${dice}`);
         if(!this.attacker) throw new Error('No attacking model');
         if(!this.defender) throw new Error('No defending model');
 
