@@ -1,6 +1,6 @@
 {
   "name": "@cemderin/battle-calculator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "battle calculator",
   "repository": "https://cemderin@github.com/cemderin/battle-calculator.git",
   "author": "cemyderin@gmail.com",
@@ -11,7 +11,8 @@
     "commit": "npx git-cz",
     "start": "npx ts-node dev.ts",
     "build": "npx tsc",
-    "test": "exit 0"
+    "test": "exit 0",
+    "release": "npx standard-version"
   },
   "dependencies": {
     "uuid": "^3.4.0"
