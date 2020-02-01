@@ -11,6 +11,7 @@
     "commit": "npx git-cz",
     "start": "npx ts-node dev.ts",
     "build": "npx tsc",
+    "pre-build": "npx ts-node ./.build/build.ts",
     "test": "exit 0",
     "release": "npx standard-version"
   },
