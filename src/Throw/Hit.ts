@@ -3,7 +3,6 @@ import Logger from "../Logger";
 
 class ThrowHit extends Throw {
     roll(dice: number): number {
-        Logger.log(`Throw hit with ${dice}`);
 
         // check for attacker
         if(!this.attacker) throw new Error('No attacking model');
