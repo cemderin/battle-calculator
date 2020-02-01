@@ -36,7 +36,7 @@ class Phase {
             currentDice = this.throws[i].roll(currentDice);
         }
 
-        Logger.log(`Result ${currentDice}`);
+        Logger.log(`Total wounds caused ${currentDice}`);
         return currentDice;
     } 
 }

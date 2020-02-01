@@ -8,14 +8,15 @@ class ThrowWound extends Throw {
         if(!this.defender) throw new Error('No defending model');
 
         let minFace = 0;
+        let attackingStrength = this.attacker.weapon.strength;
 
-        if(this.attacker.strength >= this.defender.toughness*2) {
+        if(attackingStrength >= this.defender.toughness*2) {
             minFace = 2;
-        } else if(this.attacker.strength > this.defender.toughness) {
+        } else if(attackingStrength > this.defender.toughness) {
             minFace = 3;
-        } else if(this.attacker.strength == this.defender.toughness) {
+        } else if(attackingStrength == this.defender.toughness) {
             minFace = 4;
-        }  else if(this.attacker.strength < this.defender.toughness) {
+        }  else if(attackingStrength < this.defender.toughness) {
             minFace = 5;
         } 
 

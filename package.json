@@ -9,7 +9,7 @@
   "types": "./dist/index.dt.ts",
   "scripts": {
     "commit": "npx git-cz",
-    "start": "npx ts-node index.ts",
+    "start": "npx ts-node dev.ts",
     "build": "npx tsc",
     "test": "exit 0"
   },

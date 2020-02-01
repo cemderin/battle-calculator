@@ -7,13 +7,18 @@ class ThrowSave extends Throw {
 
         // check for defender
         if(!this.defender) throw new Error('No defending model');
+        if(!this.attacker) throw new Error('No attacking model');
+
+        let minSave = this.defender.save;
+        minSave = minSave + this.attacker.weapon.armorPiercing;
+        minSave = Math.min(minSave, 6);
 
         return  dice    // input, amount of dice
                 *       // multiply by
                 (
                     (1/6)   // total faces
                     *       // multiply by
-                    (-1 + this.defender.save) // valid faces
+                    (-1 + minSave) // valid faces
                 );
     }
 }
