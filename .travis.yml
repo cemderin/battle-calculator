@@ -1,8 +1,8 @@
 language: node_js
 node_js:
 - 10
+script: yarn build
 deploy:
-  script: yarn build
   edge: true
   provider: npm
   email: cemyderin@gmail.com
