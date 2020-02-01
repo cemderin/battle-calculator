@@ -1,11 +1,11 @@
 language: node_js
 node_js:
 - 10
-before_deploy: yarn build
+before_deploy: yarn pre-build && yarn build
 deploy:
-  skip_cleanup: true
   edge: true
   provider: npm
+  skip_cleanup: true
   email: cemyderin@gmail.com
   api_key:
     secure: iHr3CEcDC96ONDNR6aBn0tmRQV1/m6NrYGRQJSrzo7u/sHGI0GfAXq2bZ/kkgNW0/4RTunfuC+cf2o1EfPnW5fUvdOQd2EqVoWr+roZCjFy40ncX8imsB2qQhXek+eEFQMPC8nrGq7Ua5JVoCq4PQJyHFtZH2i4GGWujSkHZzqWAmdIcV0398TuAqHOllZ7WAb7eNK3AuJ6Po+okPSozZJllnInxWEDHw/cFUS4ec+wlzZlVPqVA+z2U9ZDQpfSFmAuYgZy4fqHBj5nLBz+YR9ml1EoXJmZXnCxkc7VLKszv6fmDsJXedbs59+HjV2CXprtRb4W0vdZ3Sby10AWAi5md3ob4lTxiGuEYtVr0A3L3uNhUMoUZFO8RenGdXqitTrklRkehvonlnfE/calKVhmHP8ZjVrc0NjR3mVt8VpWsRNkHsAa99sdtMDUp16yX2dBq1Otky+ishSCVPoriJgy0uaVONSw1K8J+Va5aCMh3GaKHjiYTlYweHlH3eHz7H30hT5wd/h/i6qrPdXlRa+pDpO8A+G5fH423fpvqdNvcx8LzO17I/Uonh/B17+ifLLkVr1GRBtX+hu/vnKkPHztJikis84omKh6ISe1Cb74OIg8jlphlZ4iuuhxZGeatWjJFmuQAU7eKQVjHBVBAs2zoVZy7QOSbREeEiKdvP7s=
