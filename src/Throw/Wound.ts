@@ -3,6 +3,7 @@ import Logger from "../Logger";
 
 class ThrowWound extends Throw {
     roll(dice: number): number {
+        this.in = dice;
         Logger.log(`Throw wound with ${dice}`);
         if(!this.attacker) throw new Error('No attacking model');
         if(!this.defender) throw new Error('No defending model');
@@ -20,7 +21,7 @@ class ThrowWound extends Throw {
             minFace = 5;
         } 
 
-        return  dice    // input, amount of dice
+        return this.out = dice    // input, amount of dice
                 *       // multiply by
                 (
                     (1/6)   // total faces

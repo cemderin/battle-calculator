@@ -3,6 +3,7 @@ import Logger from '../Logger';
 
 class ThrowSave extends Throw {
     roll(dice: number): number {
+        this.in = dice;
         Logger.log(`Throw save with ${dice}`);
 
         // check for defender
@@ -13,7 +14,7 @@ class ThrowSave extends Throw {
         minSave = minSave + this.attacker.weapon.armorPiercing;
         minSave = Math.min(minSave, 6);
 
-        return  dice    // input, amount of dice
+        return this.out = dice    // input, amount of dice
                 *       // multiply by
                 (
                     (1/6)   // total faces
