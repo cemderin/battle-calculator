@@ -13,7 +13,6 @@ class ThrowSave extends Throw {
         let minSave = this.defender.save;
         minSave = minSave - this.attacker.weapon.armorPiercing;
         minSave = Math.min(minSave, 6);
-        console.log('minSave', minSave)
 
         return this.out = dice    // input, amount of dice
                 *       // multiply by
