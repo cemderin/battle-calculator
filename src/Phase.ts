@@ -12,7 +12,7 @@ class Phase {
     throws: Array<Throw>;
 
     constructor(
-        name: string = 'unnamed phase',
+        name: string = 'Unnamed phase',
         attacker: Model = new Model(),
         defender: Model = new Model(),
     ) {
