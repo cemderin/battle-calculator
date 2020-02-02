@@ -5,7 +5,8 @@ class Model {
     toughness: number = 1;
     strength: number = 1;
     save: number = 6;
-    weapon: Weapon = new Weapon()
+    weapon: Weapon = new Weapon();
+    name: string = 'Unnamed model'
 }
 
 export default Model;
