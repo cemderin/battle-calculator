@@ -27,7 +27,7 @@ class Phase {
     }
 
     handle(dice: number = 1): number {
-        Logger.log(`Start Phase ${this.name}`);
+        Logger.log(`Start Phase ${this.name} `);
         let currentDice = dice;
         for(let i = 0; i < this.throws.length; i++) {
             this.throws[i].attacker = this.attacker;

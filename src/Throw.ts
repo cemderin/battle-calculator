@@ -7,7 +7,8 @@ class Throw {
     out: number | null = null;
 
     roll(dice: number): number {
-        return dice;
+        this.in = dice;
+        return this.out = dice;
     }    
 }
 
