@@ -19,6 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.0.2",
     "git-cz": "^4.2.0",
