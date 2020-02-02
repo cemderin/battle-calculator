@@ -6,7 +6,8 @@ class Model {
     strength: number = 1;
     save: number = 6;
     weapon: Weapon = new Weapon();
-    name: string = 'Unnamed model'
+    name: string = 'Unnamed model';
+    points: number = 0;
 }
 
 export default Model;
