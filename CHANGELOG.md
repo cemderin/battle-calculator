@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/cemderin/battle-calculator/compare/v0.0.5...v0.0.6) (2020-02-02)
+
+
+### Features
+
+* 🎸 Add points property to Model and Weapon ([17c13a0](https://github.com/cemderin/battle-calculator/commit/17c13a0ffa691e54896d389feb40ff31091f2bf7))
+
 ### [0.0.5](https://github.com/cemderin/battle-calculator/compare/v0.0.4...v0.0.5) (2020-02-02)
 
 
